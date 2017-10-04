@@ -1,0 +1,16 @@
+#Wed Oct 04 09:49:28 EDT 2017
+renamed.4=classes4.dex
+renamed.3=classes.dex
+renamed.2=classes5.dex
+renamed.1=classes3.dex
+base.4=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/2/microsoft-band-1.3.20307.2_2518a2426dc2de787aee1dd2a9f7e3a80f50c7aa
+renamed.0=classes2.dex
+base.3=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9aa15cb9c7ed5cea01b6bf63eb8bdf6ef71c06ce
+base.2=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/2/opencsv-2.3_e0337d355c6df639591d76d2e3301037e9aa105e
+base.1=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/2/GraphView-4.2.1_251c05c2c15cf93e7d4556fe9bec5b052c75ce21
+base.0=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_11e3e2016f11a632e191a264ba487fd4a9ea93b9
+file.4=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/2/microsoft-band-1.3.20307.2_2518a2426dc2de787aee1dd2a9f7e3a80f50c7aa/classes.dex
+file.3=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9aa15cb9c7ed5cea01b6bf63eb8bdf6ef71c06ce/classes.dex
+file.2=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/2/opencsv-2.3_e0337d355c6df639591d76d2e3301037e9aa105e/classes.dex
+file.1=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/2/GraphView-4.2.1_251c05c2c15cf93e7d4556fe9bec5b052c75ce21/classes.dex
+file.0=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_11e3e2016f11a632e191a264ba487fd4a9ea93b9/classes.dex
