@@ -1,4 +1,4 @@
-#Wed Oct 04 09:51:54 EDT 2017
+#Wed Oct 04 11:12:02 EDT 2017
 base.0=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_0e6b173f9d6d6cbe748275eb625a806dcb3d83c5
 renamed.1=classes.dex
 renamed.0=classes2.dex

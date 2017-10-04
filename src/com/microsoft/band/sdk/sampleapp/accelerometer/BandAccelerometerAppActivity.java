@@ -17,9 +17,11 @@
 //IN THE SOFTWARE.
 package com.microsoft.band.sdk.sampleapp.accelerometer;
 
+
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
+
 import com.microsoft.band.BandClient;
 import com.microsoft.band.BandClientManager;
 import com.microsoft.band.BandException;
@@ -33,17 +35,20 @@ import com.microsoft.band.sensors.BandGyroscopeEventListener;
 import com.microsoft.band.sensors.SampleRate;
 
 
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+
 import android.view.View;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+
 
 
 import org.w3c.dom.Text;
@@ -58,6 +63,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import au.com.bytecode.opencsv.CSVWriter;
+
 
 public class BandAccelerometerAppActivity extends Activity {
 
@@ -74,16 +80,19 @@ public class BandAccelerometerAppActivity extends Activity {
 	private boolean isRecording = false;
 	private int count = 0;
 	long startTime;
+
 	
 	private BandAccelerometerEventListener mAccelerometerEventListener = new BandAccelerometerEventListener() {
         @Override
         public void onBandAccelerometerChanged(final BandAccelerometerEvent event) {
             if (event != null) {
+
 				count++;
 
 				updateGraph1(event.getTimestamp(), event.getAccelerationX(), event.getAccelerationY(), event.getAccelerationZ());
 //            	appendToUI(String.format(" X = %.3f \n Y = %.3f\n Z = %.3f", event.getAccelerationX(),
 //            			event.getAccelerationY(), event.getAccelerationZ()), false);
+
             }
         }
     };
@@ -91,9 +100,11 @@ public class BandAccelerometerAppActivity extends Activity {
     private BandGyroscopeEventListener gyroscopeEventListener = new BandGyroscopeEventListener() {
 		@Override
 		public void onBandGyroscopeChanged(BandGyroscopeEvent bandGyroscopeEvent) {
+
 			updateGraph2(bandGyroscopeEvent.getTimestamp(), bandGyroscopeEvent.getAngularVelocityX(), bandGyroscopeEvent.getAngularVelocityY(), bandGyroscopeEvent.getAngularVelocityZ());
 //			appendToUI(String.format(" X = %.3f \n Y = %.3f\n Z = %.3f", bandGyroscopeEvent.getAngularVelocityX(),
 //					bandGyroscopeEvent.getAngularVelocityY(), bandGyroscopeEvent.getAngularVelocityZ()), true);
+
 		}
 
 	};
@@ -102,6 +113,7 @@ public class BandAccelerometerAppActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 		x = 0.0;
 		y = 0.0;
@@ -136,6 +148,7 @@ public class BandAccelerometerAppActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				txtStatus.setText("");
+
 				if (!isRecording) {
 					btnStart.setText("Stop");
 					new GyroscopeSubscriptionTask().execute();
@@ -186,6 +199,7 @@ public class BandAccelerometerAppActivity extends Activity {
 		}
 	}
 
+
 	private void updateGraph1 (final long timestamp, final float x, final float y, final float z)
 	{
 		runOnUiThread(new Runnable() {
@@ -219,6 +233,7 @@ public class BandAccelerometerAppActivity extends Activity {
 			}
 		});
 	}
+
 
 
 	

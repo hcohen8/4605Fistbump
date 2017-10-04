@@ -1,12 +1,16 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="15dp"
     android:orientation="vertical"
+
     tools:context=".BandAccelerometerAppActivity"
     android:weightSum="1">
+
 
     <Button
         android:id="@+id/btnStart"
@@ -28,6 +32,7 @@
         android:text="TextView"
         android:layout_weight="0.49" />
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,6 +52,7 @@
             android:layout_weight="0.64" />
 
     </LinearLayout>
+
 
 
 

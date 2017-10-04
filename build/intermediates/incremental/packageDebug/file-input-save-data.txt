@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Oct 04 09:51:54 EDT 2017
+#Wed Oct 04 11:12:02 EDT 2017
 2.base=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/res/resources-debug.ap_
 5.file=/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
 5.set=ANDROID_RESOURCE
