@@ -73,13 +73,17 @@ public class BandAccelerometerAppActivity extends Activity {
 	private TextView gyroscopeStatus;
 	private GraphView graph;
 	private GraphView graph2;
-    private ArrayList<DataPoint> aPoints;
-    private ArrayList<DataPoint> gPoints;
+    private ArrayList<DataPoint> aPointsX;
+    private ArrayList<DataPoint> aPointsY;
+    private ArrayList<DataPoint> aPointsZ;
+    private ArrayList<DataPoint> gPointsX;
+    private ArrayList<DataPoint> gPointsY;
+    private ArrayList<DataPoint> gPointsZ;
 	private LineGraphSeries<DataPoint> seriesX1, seriesY1, seriesZ1, seriesX2, seriesY2, seriesZ2;
 	private double y,x;
 	private boolean isRecording = false;
 	private int count = 0;
-	long startTime;
+    long tStart;
 
 	
 	private BandAccelerometerEventListener mAccelerometerEventListener = new BandAccelerometerEventListener() {
@@ -89,7 +93,10 @@ public class BandAccelerometerAppActivity extends Activity {
 
 				count++;
 
-				updateGraph1(event.getTimestamp(), event.getAccelerationX(), event.getAccelerationY(), event.getAccelerationZ());
+                long tEnd = System.currentTimeMillis();
+                long tDelta = tEnd - tStart;
+                double elapsedSeconds = tDelta / 1000.0;
+				updateGraph1(elapsedSeconds, event.getAccelerationX(), event.getAccelerationY(), event.getAccelerationZ());
 //            	appendToUI(String.format(" X = %.3f \n Y = %.3f\n Z = %.3f", event.getAccelerationX(),
 //            			event.getAccelerationY(), event.getAccelerationZ()), false);
 
@@ -101,7 +108,10 @@ public class BandAccelerometerAppActivity extends Activity {
 		@Override
 		public void onBandGyroscopeChanged(BandGyroscopeEvent bandGyroscopeEvent) {
 
-			updateGraph2(bandGyroscopeEvent.getTimestamp(), bandGyroscopeEvent.getAngularVelocityX(), bandGyroscopeEvent.getAngularVelocityY(), bandGyroscopeEvent.getAngularVelocityZ());
+            long tEnd = System.currentTimeMillis();
+            long tDelta = tEnd - tStart;
+            double elapsedSeconds = tDelta / 1000.0;
+			updateGraph2(elapsedSeconds, bandGyroscopeEvent.getAngularVelocityX(), bandGyroscopeEvent.getAngularVelocityY(), bandGyroscopeEvent.getAngularVelocityZ());
 //			appendToUI(String.format(" X = %.3f \n Y = %.3f\n Z = %.3f", bandGyroscopeEvent.getAngularVelocityX(),
 //					bandGyroscopeEvent.getAngularVelocityY(), bandGyroscopeEvent.getAngularVelocityZ()), true);
 
@@ -117,8 +127,12 @@ public class BandAccelerometerAppActivity extends Activity {
 
 		x = 0.0;
 		y = 0.0;
-        aPoints = new ArrayList<>();
-        gPoints = new ArrayList<>();
+        aPointsX = new ArrayList<>();
+        aPointsY = new ArrayList<>();
+        aPointsZ = new ArrayList<>();
+        gPointsX = new ArrayList<>();
+        gPointsY = new ArrayList<>();
+        gPointsZ = new ArrayList<>();
 		gyroscopeStatus = (TextView) findViewById(R.id.gyroscopeStats);
         txtStatus = (TextView) findViewById(R.id.txtStatus);
         btnStart = (Button) findViewById(R.id.btnStart);
@@ -154,6 +168,7 @@ public class BandAccelerometerAppActivity extends Activity {
 					new GyroscopeSubscriptionTask().execute();
 					new AccelerometerSubscriptionTask().execute();
 					isRecording = true;
+                    tStart = System.currentTimeMillis();
 				} else {
 					btnStart.setText("Start");
 					try {
@@ -162,6 +177,12 @@ public class BandAccelerometerAppActivity extends Activity {
 					} catch (BandIOException e) {
 						appendToUI(e.getMessage(), false);
 					}
+
+					try {
+                        exportToCSV(aPointsX, aPointsY, aPointsZ, gPointsX, gPointsY, gPointsZ);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     isRecording = false;
 				}
 
@@ -200,7 +221,7 @@ public class BandAccelerometerAppActivity extends Activity {
 	}
 
 
-	private void updateGraph1 (final long timestamp, final float x, final float y, final float z)
+	private void updateGraph1 (final double timestamp, final float x, final float y, final float z)
 	{
 		runOnUiThread(new Runnable() {
 			@Override
@@ -208,7 +229,9 @@ public class BandAccelerometerAppActivity extends Activity {
 				seriesX1.appendData(new DataPoint(timestamp, x), true, 25);
 				seriesY1.appendData(new DataPoint(timestamp, y), true, 25);
 				seriesZ1.appendData(new DataPoint(timestamp, z), true, 25);
-                aPoints.add(new DataPoint(timestamp, x));
+                aPointsX.add(new DataPoint(timestamp, x));
+                aPointsY.add(new DataPoint(timestamp, y));
+                aPointsZ.add(new DataPoint(timestamp, z));
 				graph.removeAllSeries();
 				graph.addSeries(seriesX1);
 				graph.addSeries(seriesY1);
@@ -217,7 +240,7 @@ public class BandAccelerometerAppActivity extends Activity {
 		});
 	}
 
-	private void updateGraph2 (final long timestamp, final float x, final float y, final float z)
+	private void updateGraph2 (final double timestamp, final float x, final float y, final float z)
 	{
 		runOnUiThread(new Runnable() {
 			@Override
@@ -225,7 +248,9 @@ public class BandAccelerometerAppActivity extends Activity {
 				seriesX2.appendData(new DataPoint(timestamp, x), true, 25);
 				seriesY2.appendData(new DataPoint(timestamp, y), true, 25);
 				seriesZ2.appendData(new DataPoint(timestamp, z), true, 25);
-                gPoints.add(new DataPoint(timestamp, x));
+                gPointsX.add(new DataPoint(timestamp, x));
+                gPointsY.add(new DataPoint(timestamp, y));
+                gPointsZ.add(new DataPoint(timestamp, z));
 				graph2.removeAllSeries();
 				graph2.addSeries(seriesX2);
 				graph2.addSeries(seriesY2);
@@ -234,10 +259,27 @@ public class BandAccelerometerAppActivity extends Activity {
 		});
 	}
 
+	private void exportToCSV(ArrayList<DataPoint> xAccData, ArrayList<DataPoint> yAccData, ArrayList<DataPoint> zAccData, ArrayList<DataPoint> xGyrData, ArrayList<DataPoint> yGyrData, ArrayList<DataPoint> zGyrData) throws IOException {
+        String csv = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
+        String fileName = "AnalysisData.csv";
+        String filePath = csv + File.separator + fileName;
+        CSVWriter writer = new CSVWriter(new FileWriter(filePath));
+        ArrayList<String[]> strList = new ArrayList<>();
+        for(int i = 0; i < xAccData.size(); i++) {
+            String[] str = {String.valueOf(xAccData.get(i).getX()), String.valueOf(xAccData.get(i).getY()), String.valueOf(yAccData.get(i).getY()), String.valueOf(zAccData.get(i).getY()), String.valueOf(xGyrData.get(i).getY()), String.valueOf(yGyrData.get(i).getY()), String.valueOf(zGyrData.get(i).getY())};
+            strList.add(str);
+        }
+        writer.writeAll(strList);
+        try{
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
-	
-	private class AccelerometerSubscriptionTask extends AsyncTask<Void, Void, Void> {
+
+    private class AccelerometerSubscriptionTask extends AsyncTask<Void, Void, Void> {
 		@Override
 		protected Void doInBackground(Void... params) {
 			try {

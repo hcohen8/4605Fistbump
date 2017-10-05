@@ -10,31 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0233d7c1-f484-49f1-9e92-6d1224ef10ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-09-44-49-607.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-09-44-55-076.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-09-49-15-700.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-09-51-53-286.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-10-43-23-934.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/buildId.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/CSVParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/CSVReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/CSVWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/ResultSetHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/ResultSetHelperService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/bean/ColumnPositionMappingStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/bean/CsvToBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/bean/HeaderColumnNameMappingStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/bean/HeaderColumnNameTranslateMappingStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/opencsv-2.3.jar_cs0o3udfpt28tvg5p3z1swfsu/au/com/bytecode/opencsv/bean/MappingStrategy.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" />
@@ -46,7 +28,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" />
@@ -58,10 +39,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/zip-cache/verW+7K0PjfE1yG4j4TEVAkmGso=" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/zip-cache/verW+7K0PjfE1yG4j4TEVAkmGso=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/verW+7K0PjfE1yG4j4TEVAkmGso=" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/verW+7K0PjfE1yG4j4TEVAkmGso=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_0.apk" afterPath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_0.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" />
@@ -86,36 +63,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/BandAccelerometerApp-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/BandAccelerometerApp-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BandAccelerometerApp.iml" afterPath="$PROJECT_DIR$/BandAccelerometerApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java" afterPath="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java" />
     </list>
     <ignored path="BandAccelerometerApp.iws" />
@@ -186,26 +136,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BandAccelerometerAppActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BandAccelerometerAppActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="307" column="44" selection-start-line="307" selection-start-column="44" selection-end-line="307" selection-end-column="44" />
+            <state relative-caret-position="185">
+              <caret line="181" column="96" selection-start-line="181" selection-start-column="96" selection-end-line="181" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1507129412000" expanded="false" signature="10737:10745" ph=" { " />
-                <marker date="1507129412000" expanded="false" signature="10771:10777" ph=" }" />
-                <marker date="1507129412000" expanded="false" signature="10870:10878" ph=" { " />
-                <marker date="1507129412000" expanded="false" signature="10910:10916" ph=" }" />
+                <element signature="e#3270#3940#0" expanded="true" />
+                <element signature="e#3939#3940#0" expanded="true" />
+                <element signature="e#4007#4653#0" expanded="true" />
+                <element signature="e#4652#4653#0" expanded="true" />
+                <element signature="e#6004#6946#0" expanded="true" />
+                <element signature="e#6945#6946#0" expanded="true" />
+                <element signature="e#7658#8210#0" expanded="true" />
+                <element signature="e#8209#8210#0" expanded="true" />
+                <element signature="e#8333#8889#0" expanded="true" />
+                <element signature="e#8888#8889#0" expanded="true" />
+                <element signature="e#12929#13026#0" expanded="true" />
+                <element signature="e#13025#13026#0" expanded="true" />
+                <element signature="e#13062#13165#0" expanded="true" />
+                <element signature="e#13164#13165#0" expanded="true" />
+                <marker date="1507169894000" expanded="false" signature="12981:12989" ph=" { " />
+                <marker date="1507169894000" expanded="false" signature="13015:13021" ph=" }" />
+                <marker date="1507169894000" expanded="false" signature="13114:13122" ph=" { " />
+                <marker date="1507169894000" expanded="false" signature="13154:13160" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state relative-caret-position="258">
               <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
               <folding />
             </state>
@@ -231,8 +195,8 @@
       <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -251,9 +215,12 @@
       <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="75">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding>
+                <marker date="1507130334000" expanded="true" signature="59:179" ph="..." />
+                <marker date="1507130334000" expanded="true" signature="101:168" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1203,13 +1170,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java" />
       </list>
     </option>
   </component>
@@ -1640,9 +1607,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.281198" sideWeight="0.5032841" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16638935" sideWeight="0.5032841" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.281198" sideWeight="0.49671593" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16638935" sideWeight="0.49671593" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1014975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1688,10 +1655,24 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1507129412000" expanded="false" signature="10737:10745" ph=" { " />
-            <marker date="1507129412000" expanded="false" signature="10771:10777" ph=" }" />
-            <marker date="1507129412000" expanded="false" signature="10870:10878" ph=" { " />
-            <marker date="1507129412000" expanded="false" signature="10910:10916" ph=" }" />
+            <element signature="e#3270#3940#0" expanded="true" />
+            <element signature="e#3939#3940#0" expanded="true" />
+            <element signature="e#4007#4653#0" expanded="true" />
+            <element signature="e#4652#4653#0" expanded="true" />
+            <element signature="e#6004#6946#0" expanded="true" />
+            <element signature="e#6945#6946#0" expanded="true" />
+            <element signature="e#7658#8210#0" expanded="true" />
+            <element signature="e#8209#8210#0" expanded="true" />
+            <element signature="e#8333#8889#0" expanded="true" />
+            <element signature="e#8888#8889#0" expanded="true" />
+            <element signature="e#12929#13026#0" expanded="true" />
+            <element signature="e#13025#13026#0" expanded="true" />
+            <element signature="e#13062#13165#0" expanded="true" />
+            <element signature="e#13164#13165#0" expanded="true" />
+            <marker date="1507169894000" expanded="false" signature="12981:12989" ph=" { " />
+            <marker date="1507169894000" expanded="false" signature="13015:13021" ph=" }" />
+            <marker date="1507169894000" expanded="false" signature="13114:13122" ph=" { " />
+            <marker date="1507169894000" expanded="false" signature="13154:13160" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1732,10 +1713,24 @@
           <caret line="213" column="51" selection-start-line="213" selection-start-column="51" selection-end-line="213" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1507129412000" expanded="false" signature="10737:10745" ph=" { " />
-            <marker date="1507129412000" expanded="false" signature="10771:10777" ph=" }" />
-            <marker date="1507129412000" expanded="false" signature="10870:10878" ph=" { " />
-            <marker date="1507129412000" expanded="false" signature="10910:10916" ph=" }" />
+            <element signature="e#3270#3940#0" expanded="true" />
+            <element signature="e#3939#3940#0" expanded="true" />
+            <element signature="e#4007#4653#0" expanded="true" />
+            <element signature="e#4652#4653#0" expanded="true" />
+            <element signature="e#6004#6946#0" expanded="true" />
+            <element signature="e#6945#6946#0" expanded="true" />
+            <element signature="e#7658#8210#0" expanded="true" />
+            <element signature="e#8209#8210#0" expanded="true" />
+            <element signature="e#8333#8889#0" expanded="true" />
+            <element signature="e#8888#8889#0" expanded="true" />
+            <element signature="e#12929#13026#0" expanded="true" />
+            <element signature="e#13025#13026#0" expanded="true" />
+            <element signature="e#13062#13165#0" expanded="true" />
+            <element signature="e#13164#13165#0" expanded="true" />
+            <marker date="1507169894000" expanded="false" signature="12981:12989" ph=" { " />
+            <marker date="1507169894000" expanded="false" signature="13015:13021" ph=" }" />
+            <marker date="1507169894000" expanded="false" signature="13114:13122" ph=" { " />
+            <marker date="1507169894000" expanded="false" signature="13154:13160" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1768,10 +1763,24 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1507129412000" expanded="false" signature="10737:10745" ph=" { " />
-            <marker date="1507129412000" expanded="false" signature="10771:10777" ph=" }" />
-            <marker date="1507129412000" expanded="false" signature="10870:10878" ph=" { " />
-            <marker date="1507129412000" expanded="false" signature="10910:10916" ph=" }" />
+            <element signature="e#3270#3940#0" expanded="true" />
+            <element signature="e#3939#3940#0" expanded="true" />
+            <element signature="e#4007#4653#0" expanded="true" />
+            <element signature="e#4652#4653#0" expanded="true" />
+            <element signature="e#6004#6946#0" expanded="true" />
+            <element signature="e#6945#6946#0" expanded="true" />
+            <element signature="e#7658#8210#0" expanded="true" />
+            <element signature="e#8209#8210#0" expanded="true" />
+            <element signature="e#8333#8889#0" expanded="true" />
+            <element signature="e#8888#8889#0" expanded="true" />
+            <element signature="e#12929#13026#0" expanded="true" />
+            <element signature="e#13025#13026#0" expanded="true" />
+            <element signature="e#13062#13165#0" expanded="true" />
+            <element signature="e#13164#13165#0" expanded="true" />
+            <marker date="1507169894000" expanded="false" signature="12981:12989" ph=" { " />
+            <marker date="1507169894000" expanded="false" signature="13015:13021" ph=" }" />
+            <marker date="1507169894000" expanded="false" signature="13114:13122" ph=" { " />
+            <marker date="1507169894000" expanded="false" signature="13154:13160" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1839,9 +1848,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <marker date="1507130334000" expanded="true" signature="59:179" ph="..." />
+            <marker date="1507130334000" expanded="true" signature="101:168" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1861,8 +1873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1875,25 +1887,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="307" column="44" selection-start-line="307" selection-start-column="44" selection-end-line="307" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1507129412000" expanded="false" signature="10737:10745" ph=" { " />
-            <marker date="1507129412000" expanded="false" signature="10771:10777" ph=" }" />
-            <marker date="1507129412000" expanded="false" signature="10870:10878" ph=" { " />
-            <marker date="1507129412000" expanded="false" signature="10910:10916" ph=" }" />
-          </folding>
+        <state relative-caret-position="258">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="185">
+          <caret line="181" column="96" selection-start-line="181" selection-start-column="96" selection-end-line="181" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3270#3940#0" expanded="true" />
+            <element signature="e#3939#3940#0" expanded="true" />
+            <element signature="e#4007#4653#0" expanded="true" />
+            <element signature="e#4652#4653#0" expanded="true" />
+            <element signature="e#6004#6946#0" expanded="true" />
+            <element signature="e#6945#6946#0" expanded="true" />
+            <element signature="e#7658#8210#0" expanded="true" />
+            <element signature="e#8209#8210#0" expanded="true" />
+            <element signature="e#8333#8889#0" expanded="true" />
+            <element signature="e#8888#8889#0" expanded="true" />
+            <element signature="e#12929#13026#0" expanded="true" />
+            <element signature="e#13025#13026#0" expanded="true" />
+            <element signature="e#13062#13165#0" expanded="true" />
+            <element signature="e#13164#13165#0" expanded="true" />
+            <marker date="1507169894000" expanded="false" signature="12981:12989" ph=" { " />
+            <marker date="1507169894000" expanded="false" signature="13015:13021" ph=" }" />
+            <marker date="1507169894000" expanded="false" signature="13114:13122" ph=" { " />
+            <marker date="1507169894000" expanded="false" signature="13154:13160" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
