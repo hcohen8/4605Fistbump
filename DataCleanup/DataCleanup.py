@@ -41,76 +41,42 @@ def csvArrayAppend(csvfile, letter, tp):
 	f.close()
 	return array_to_return
 
-def listDifference(arr1, arr2):
-	arr_sim = []
-	for (element1, element2) in zip(arr1, arr2):
-		arr_sim.append(abs(element1 - element2))
-	ret_val = float(numpy.mean(arr_sim))
-	return ret_val
+def magnitudeArray(x, y, z):
+	magnitude_array = []
+	for (element1, element2, element3) in zip(x, y, z):
+		magnitude_array.append(float((element1**2 + element2**2 + element3**2)**(0.5)))
+	return magnitude_array
 	
-def averageDifference(sim1, sim2, *args):
-	arr_sim = []
-	arr_sim.append(sim1)
-	arr_sim.append(sim2)
-	for arg in args:
-		arr_sim.append(arg)
-	ret_val = float(numpy.mean(arr_sim))
-	return ret_val
 
 ####################################
 # Main logic of module
 ####################################
 
 # Check arguments
-if (len(sys.argv) != 3):
-	panic("Usage: python ./DataCleanup <csvfile-path1> <csvfile-path2>")
+if (len(sys.argv) != 2):
+	panic("Usage: python ./DataCleanup.py <csvfile-path>")
 
 # Defining our files
-csvfile1 = sys.argv[1]
-csvfile2 = sys.argv[2]
+csvfile = sys.argv[1]
 
-# x, y, and z arrays for accelerometer data for first csv file
-x_array_accel1 = csvArrayAppend(csvfile1, 'x', 'accelerometer')
-y_array_accel1 = csvArrayAppend(csvfile1, 'y', 'accelerometer')
-z_array_accel1 = csvArrayAppend(csvfile1, 'z', 'accelerometer')
+# x, y, and z arrays for accelerometer data for csv file
+x_array_accel = csvArrayAppend(csvfile, 'x', 'accelerometer')
+y_array_accel = csvArrayAppend(csvfile, 'y', 'accelerometer')
+z_array_accel = csvArrayAppend(csvfile, 'z', 'accelerometer')
 
-# x, y, and z arrays for gyroscope data for first csv file
-x_array_gyro1 = csvArrayAppend(csvfile1, 'x', 'gyroscope')
-y_array_gyro1 = csvArrayAppend(csvfile1, 'y', 'gyroscope')
-z_array_gyro1 = csvArrayAppend(csvfile1, 'z', 'gyroscope')
+# x, y, and z arrays for gyroscope data for csv file
+x_array_gyro = csvArrayAppend(csvfile, 'x', 'gyroscope')
+y_array_gyro = csvArrayAppend(csvfile, 'y', 'gyroscope')
+z_array_gyro = csvArrayAppend(csvfile, 'z', 'gyroscope')
 
-# x, y, and z arrays for accelerometer data for second csv file
-x_array_accel2 = csvArrayAppend(csvfile2, 'x', 'accelerometer')
-y_array_accel2 = csvArrayAppend(csvfile2, 'y', 'accelerometer')
-z_array_accel2 = csvArrayAppend(csvfile2, 'z', 'accelerometer')
+# magnitude array for accelerometer data for csv file
+accel_array = magnitudeArray(x_array_accel, y_array_accel, z_array_accel)
 
-# x, y, and z arrays for gyroscope data for second csv file
-x_array_gyro2 = csvArrayAppend(csvfile2, 'x', 'gyroscope')
-y_array_gyro2 = csvArrayAppend(csvfile2, 'y', 'gyroscope')
-z_array_gyro2 = csvArrayAppend(csvfile2, 'z', 'gyroscope')
+# gyroscope array for accelerometer data for csv file
+gyro_array = magnitudeArray(x_array_gyro, y_array_gyro, z_array_gyro)
 
-# Individual Difference
-x_accel_diff = listDifference(x_array_accel1, x_array_accel2)
-y_accel_diff = listDifference(y_array_accel1, y_array_accel2)
-z_accel_diff = listDifference(z_array_accel1, z_array_accel2)
-x_gyro_diff = listDifference(x_array_gyro1, x_array_gyro2)
-y_gyro_diff = listDifference(y_array_gyro1, y_array_gyro2)
-z_gyro_diff = listDifference(z_array_gyro1, z_array_gyro2)
+# printing arrays for use in Java DTW
+print(accel_array)
+print(gyro_array)
 
 
-print("X-coordinate accelerometer difference: %f" % x_accel_diff)
-print("Y-coordinate accelerometer difference: %f" % y_accel_diff)
-print("Z-coordinate accelerometer difference: %f" % z_accel_diff)
-print("X-coordinate gyroscope difference: %f" % x_gyro_diff)
-print("Y-coordinate gyroscope difference: %f" % y_gyro_diff)
-print("Z-coordinate gyroscope difference: %f" % z_gyro_diff)
-
-# Accelerometer and Gyroscope Difference
-accel_diff = averageDifference(x_accel_diff, y_accel_diff, z_accel_diff)
-gyro_diff = averageDifference(x_gyro_diff, y_gyro_diff, z_gyro_diff)
-print("Accelerometer difference: %f" % accel_diff)
-print("Gyroscope difference: %f" % gyro_diff)
-
-# Total Difference
-total_diff = averageDifference(accel_diff, gyro_diff)
-print("Total difference: %f" % total_diff)
