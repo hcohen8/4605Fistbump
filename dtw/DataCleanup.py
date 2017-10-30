@@ -16,18 +16,21 @@ def panic(error_message):
 
 def csvToText(csvfile, t_or_t):
 	# Naming setup
-	csv_file = csvfile.split("/").pop()
-	year = 	csv_file[36:40]
-	month = str(strptime(csv_file[16:19],'%b').tm_mon).zfill(2)
-	day = csv_file[20:22]
-	hour = csv_file[23:25]
-	minute = csv_file[26:28]
-	second = csv_file[29:31]
+	csv_file = csvfile.split("/").pop().split("Data").pop()
+	year = 	csv_file[24:28]
+	month = str(strptime(csv_file[4:7],'%b').tm_mon).zfill(2)
+	day = csv_file[8:10]
+	hour = csv_file[11:13]
+	minute = csv_file[14:16]
+	second = csv_file[17:19]
+
+	# Getting name of directory
+	csv_dir = csvfile.split("/")[2]
 
 	if (t_or_t.lower() == 'train'):
-		new_file = "./data/Fistbump/TRAIN-" + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + "-" + "fistbump.txt"
+		new_file = "./data/" + csv_dir + "/TRAIN-" + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + "-" + csv_dir.lower() + ".txt"
 	elif (t_or_t.lower() == 'test'):
-		new_file = "./data/Fistbump/TEST-" + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + "-" + "fistbump.txt"
+		new_file = "./data/" + csv_dir + "/TEST-" + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + "-" + csv_dir.lower() + ".txt"
 	else:
 		panic("Parameter passed in not 'test' or 'train'!")
 

@@ -83,7 +83,7 @@ def load_data():
 
 # Let's plot several selected histograms for the train data
 def plot_histograms():
-    for i in range (0, 40, 5):
+    for i in range (0, 60, 5):
         hist, bins = np.histogram(train_data_raw[i], bins=20)
         width = 0.7 * (bins[1] - bins[0])
         center = (bins[:-1] + bins[1:]) / 2
