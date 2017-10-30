@@ -47,6 +47,7 @@ The following motion patterns are included into this demo:
 * Descending stairs
 * Combing hair
 * Brushing teeth
+* Fistbumping
 
 The accelerometer data is based on the following public dataset from UCI: https://archive.ics.uci.edu/ml/datasets/Dataset+for+ADL+Recognition+with+Wrist-worn+Accelerometer
 
