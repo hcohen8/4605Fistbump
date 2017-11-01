@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "430857202258",
+    "firebase_url": "https://fistbump-40729.firebaseio.com",
+    "project_id": "fistbump-40729",
+    "storage_bucket": "fistbump-40729.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430857202258:android:941ec925f4c98f21",
+        "android_client_info": {
+          "package_name": "com.microsoft.band.sdk.sampleapp.accelerometer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430857202258-m2mjr99cbbojeqn33bjht5se17m7rf79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.microsoft.band.sdk.sampleapp.accelerometer",
+            "certificate_hash": "2aa68f97bff0422fdcdb21aacd2dff8524fe592b"
+          }
+        },
+        {
+          "client_id": "430857202258-04607tul19a3ubs0s2g8is243lttfcbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB14L-gdg63S5GilMeuPv032cf1qNqRPug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430857202258-04607tul19a3ubs0s2g8is243lttfcbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
