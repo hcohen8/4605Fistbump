@@ -83,13 +83,17 @@ def load_data():
 
 # Let's plot several selected histograms for the train data
 def plot_histograms():
-    for i in range (0, 40, 5):
+    title = train_labels[0]
+    for i in range (0, len(train_data_raw)):
+        if (train_labels[i] != title or i == len(train_data_raw) - 1):
+            plt.show()
+            title = train_labels[i] 
         hist, bins = np.histogram(train_data_raw[i], bins=20)
         width = 0.7 * (bins[1] - bins[0])
         center = (bins[:-1] + bins[1:]) / 2
         plt.title(train_labels[i])
         plt.bar(center, hist, align='center', width=width)
-        plt.show() 
+
 
 # Demonstration of KnnDtwClassifier and CommonClassifier for motion pattern recognition
 def demo_classifiers():
