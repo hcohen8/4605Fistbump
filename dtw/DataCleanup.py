@@ -34,12 +34,12 @@ def csvToText(csvfile, t_or_t):
 	else:
 		panic("Parameter passed in not 'test' or 'train'!")
 
-	# Reading accelerometer data from old csv file
+	# Reading accelerometer and gyroscope data from old csv file
 	f = open(csvfile, 'rb')
 	reader = csv.reader(f)
 	txt_rows = []
 	for row in reader:
-		txt_rows.append(row[1] + " " + row[2] + " " + row[3])
+		txt_rows.append(row[1] + " " + row[2] + " " + row[3] + " " + row[4] + " " + row[5] + " " + row[6])
 	f.close()
 
 	g = open(new_file, "w+")

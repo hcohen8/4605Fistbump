@@ -36,23 +36,25 @@ For more information about how this library works, consult the next section: "Mo
 
 ## Motion pattern recognition using KNN-DTW and classifiers from TinyLearn
 
-This is a domain-specific example of using TinyLearn module for recognizing (classifying) the motion patterns according to the supplied accelerometer data. 
+This is a domain-specific example of using TinyLearn module for recognizing (classifying) the motion patterns according to the supplied accelerometer and gyroscope data. 
 
 The following motion patterns are included into this demo:
 
-* Walking
-* Sitting down on a chair
-* Getting up from a bed
-* Drinking a glass
-* Descending stairs
-* Combing hair
-* Brushing teeth
+* Brushing Teeth
+* Drinking Water
 * Fistbumping
-
-The accelerometer data is based on the following public dataset from UCI: https://archive.ics.uci.edu/ml/datasets/Dataset+for+ADL+Recognition+with+Wrist-worn+Accelerometer
+* Hair Fixing
+* High Fiving
+* Flipping Light Switch
+* Moving Door
+* Picking up Item
+* Pulling Phone out of Pocket
+* Putting On Coat
+* Standing Up
+* Walking
 
 Dynamic Time Warping (DTW) and K-Nearest Neighbors (KNN) algorithms for machine learning are used
-to demonstrate labeling of the varying-length sequences with accelerometer data. Such algorithms can be applied to time series classification or other cases, which require matching / training sequences with unequal lengths.
+to demonstrate labeling of the varying-length sequences with accelerometer and gyroscope data. Such algorithms can be applied to time series classification or other cases, which require matching / training sequences with unequal lengths.
 
 Scikit-Learn doesn't have any DTW implementations, so a custom class has been implemented (KnnDtwClassifier)
 as a part of TinyLearn module.

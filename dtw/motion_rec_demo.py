@@ -40,6 +40,7 @@ using an alternative approach with histograms and CommonClassifier from TinyLear
 
 from tinylearn import KnnDtwClassifier
 from tinylearn import CommonClassifier
+from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -86,7 +87,7 @@ def plot_histograms():
     title = train_labels[0]
     for i in range (0, len(train_data_raw)):
         if (train_labels[i] != title or i == len(train_data_raw) - 1):
-            plt.show()
+            #plt.show()
             title = train_labels[i] 
         hist, bins = np.histogram(train_data_raw[i], bins=20)
         width = 0.7 * (bins[1] - bins[0])
@@ -100,10 +101,21 @@ def demo_classifiers():
     # Raw sequence labeling with KnnDtwClassifier and KNN=1
     clf1 = KnnDtwClassifier(1)
     clf1.fit(train_data_raw, train_labels)
-
+    
+    dtw_pred = []
+    dtw_actual = []
     for index, t in enumerate(test_data_raw):
         print("KnnDtwClassifier prediction for " +
               str(test_labels[index]) + " = " + str(clf1.predict(t)))
+        dtw_pred.append(str(test_labels[index]))
+        dtw_actual.append(str(clf1.predict(t)[0]))
+    labels = os.listdir("data")
+    print("\n")
+    print("Confusion matrix for KnnDtwClassifier: \n")
+    print("Labels: %s\n" % (str(labels)))
+    print(confusion_matrix(dtw_actual, dtw_pred, labels=labels))
+    print("\n")
+    print("===============================================================")
 
     # Let's do an extended prediction to get the distances to 3 nearest neighbors
     print("\n")
@@ -115,6 +127,8 @@ def demo_classifiers():
         nghs = np.array(train_labels)[res[1]]
         print("KnnDtwClassifier neighbors for " + str(test_labels[index]) + " = " + str(nghs))
         print("KnnDtwClassifier distances to " + str(nghs) + " = " + str(res[0]))
+    print("\n")
+    print("===============================================================")
 
     # Now let's use CommonClassifier with the histogram data for faster prediction
     print("\n")
@@ -124,9 +138,20 @@ def demo_classifiers():
     clf3.print_fit_summary()
     print("\n")
 
+    cc_pred = []
+    cc_actual = []
     for index, t in enumerate(test_data_hist):
         print("CommonClassifier prediction for " + str(test_labels[index]) +
               " = " + str(clf3.predict([t])))
+        cc_pred.append(str(test_labels[index]))
+        cc_actual.append(str(clf3.predict([t])[0]))
+    labels = os.listdir("data")
+    print("\n")
+    print("Confusion matrix for CommonClassifier: \n")
+    print("Labels: %s\n" % (str(labels)))
+    print(confusion_matrix(cc_actual, cc_pred, labels=labels))
+    print("\n")
+    print("===============================================================")
 
 if __name__ == "__main__":
     load_data()
