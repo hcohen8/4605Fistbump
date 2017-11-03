@@ -7,7 +7,7 @@ All credit goes to [this GitHub repository](https://github.com/llvll/motionml) f
 
 Regarding setup, there are a few steps that need to be taken.
 
-1) Data must be obtained from the raw data. To do this, the "DataCleanup.py" needs to be run on every file in the "raw_data" directory, specifying whether you want the data specified to be "train" or "test" data. This can be done with a simple bash script or Python script. In fact, I wrote one out. So, to do this all you have to do is execute the following command:
+1) Data must be obtained from the raw data. To do this, the "DataCleanup.py" needs to be run on every file in the "raw_data" directory, specifying whether you want the data specified to be "train" or "test" data (or have it done automatically using a 70%-30% split typical in machine learning). This can be done with a simple bash script or Python script. In fact, I wrote one out. So, to do this all you have to do is execute the following command:
 
 ```sh
 python ./navigate_dir.py
