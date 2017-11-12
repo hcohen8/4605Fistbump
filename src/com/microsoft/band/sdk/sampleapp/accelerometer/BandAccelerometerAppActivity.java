@@ -31,12 +31,19 @@ import com.microsoft.band.BandClientManager;
 import com.microsoft.band.BandException;
 import com.microsoft.band.BandInfo;
 import com.microsoft.band.BandIOException;
+import com.microsoft.band.BandPendingResult;
 import com.microsoft.band.ConnectionState;
+import com.microsoft.band.notifications.BandNotificationManager;
+import com.microsoft.band.notifications.VibrationType;
 import com.microsoft.band.sensors.BandAccelerometerEvent;
 import com.microsoft.band.sensors.BandAccelerometerEventListener;
 import com.microsoft.band.sensors.BandGyroscopeEvent;
 import com.microsoft.band.sensors.BandGyroscopeEventListener;
 import com.microsoft.band.sensors.SampleRate;
+import java.util.List;
+import java.util.UUID;
+import com.microsoft.band.tiles.BandIcon;
+import com.microsoft.band.tiles.BandTile;
 
 import android.*;
 import android.Manifest;
@@ -56,6 +63,7 @@ import android.os.Environment;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.util.Log;
 import android.view.View;
 import android.app.Activity;
 import android.os.AsyncTask;
@@ -94,6 +102,7 @@ public class BandAccelerometerAppActivity extends Activity {
 
 	private BandClient client = null;
 	private Button btnStart;
+	private Button btnNotif;
 	private TextView txtStatus;
 	private TextView gyroscopeStatus;
 	private GraphView graph;
@@ -114,7 +123,7 @@ public class BandAccelerometerAppActivity extends Activity {
 	private LocationManager locationManager;
 	private LocationListener listener;
 	private static final String MY_PREFS_NAME = "MyPrefsFile";
-	
+
 	private BandAccelerometerEventListener mAccelerometerEventListener = new BandAccelerometerEventListener() {
         @Override
         public void onBandAccelerometerChanged(final BandAccelerometerEvent event) {
@@ -157,7 +166,49 @@ public class BandAccelerometerAppActivity extends Activity {
 
 		myRef = FirebaseDatabase.getInstance().getReference();
 
-
+		btnNotif = (Button) findViewById(R.id.sendNotif);
+		try {
+			getConnectedBandClient();
+		} catch (Exception e) {
+			System.out.println("Could not get DAT");
+		}
+//		btnNotif.setOnClickListener(new OnClickListener() {
+//			@Override
+//			public void onClick(View v) {
+////				List<BandTile> tileList = null;
+////				try {
+////					tileList = client.getTileManager().getTiles().await();
+////				} catch (Exception e) {
+////					System.out.println("Could not get tiles.");
+////				}
+////				try {
+////					System.out.println("CLICKED");
+////					for (BandTile bt : tileList) {
+////						bt.getTileId();
+////					}
+////				} catch (Exception e) {}
+//				String details = "Contace information exchanged with " + "Alex";
+//				try{
+//					System.out.println("&&&&&&&&&&&&&&Clicked");
+//					BandNotificationManager man = client.getNotificationManager();
+//					System.out.println("&&&&&&&&&&&&&&Got Notif Manager");
+//					System.out.println(man.toString());
+//					if (man == null) {
+//						System.out.println("&&&&&&&&&&MAN IS NULL");
+//					}
+////					BandPendingResult vib = man.vibrate(VibrationType.NOTIFICATION_ONE_TONE);
+//					System.out.println("&&&&&&&&&&&&&&About to vibrate");
+////					vib.await();
+//					client.getNotificationManager().showDialog(UUID.fromString("Sleep"), "Information Recieved", details).await();
+////				} catch (BandException e) {
+//				} catch (Exception e) {
+//
+//					System.out.println("NO CAN DO");
+//					// handle BandException
+//				}
+//
+//			}
+//		});
 
 		ListView myListView =  (ListView) findViewById(android.R.id.list);
 		myListView.setFastScrollEnabled(true);
@@ -462,116 +513,116 @@ public class BandAccelerometerAppActivity extends Activity {
 
 
 
-//    private class AccelerometerSubscriptionTask extends AsyncTask<Void, Void, Void> {
-//		@Override
-//		protected Void doInBackground(Void... params) {
-//			try {
-//				if (getConnectedBandClient()) {
-//					appendToUI("Band is connected.\n", false);
-//					client.getSensorManager().registerAccelerometerEventListener(mAccelerometerEventListener, SampleRate.MS128);
-//				} else {
-//					appendToUI("Band isn't connected. Please make sure bluetooth is on and the band is in range.\n", false);
-//				}
-//			} catch (BandException e) {
-//				String exceptionMessage="";
-//				switch (e.getErrorType()) {
-//				case UNSUPPORTED_SDK_VERSION_ERROR:
-//					exceptionMessage = "Microsoft Health BandService doesn't support your SDK Version. Please update to latest SDK.\n";
-//					break;
-//				case SERVICE_ERROR:
-//					exceptionMessage = "Microsoft Health BandService is not available. Please make sure Microsoft Health is installed and that you have the correct permissions.\n";
-//					break;
-//				default:
-//					exceptionMessage = "Unknown error occured: " + e.getMessage() + "\n";
-//					break;
-//				}
-//				appendToUI(exceptionMessage, false);
-//
-//			} catch (Exception e) {
-//				appendToUI(e.getMessage(), false);
-//			}
-//			return null;
-//		}
-//	}
-//
-//	private class GyroscopeSubscriptionTask extends AsyncTask<Void, Void, Void> {
-//		@Override
-//		protected Void doInBackground(Void... params) {
-//			try {
-//				if (getConnectedBandClient()) {
-//					appendToUI("Band is connected.\n",false);
-//					client.getSensorManager().registerGyroscopeEventListener(gyroscopeEventListener, SampleRate.MS128);
-//				} else {
-//					appendToUI("Band isn't connected. Please make sure bluetooth is on and the band is in range.\n",false);
-//				}
-//			} catch (BandException e) {
-//				String exceptionMessage="";
-//				switch (e.getErrorType()) {
-//					case UNSUPPORTED_SDK_VERSION_ERROR:
-//						exceptionMessage = "Microsoft Health BandService doesn't support your SDK Version. Please update to latest SDK.\n";
-//						break;
-//					case SERVICE_ERROR:
-//						exceptionMessage = "Microsoft Health BandService is not available. Please make sure Microsoft Health is installed and that you have the correct permissions.\n";
-//						break;
-//					default:
-//						exceptionMessage = "Unknown error occured: " + e.getMessage() + "\n";
-//						break;
-//				}
-//				appendToUI(exceptionMessage, false);
-//
-//			} catch (Exception e) {
-//				appendToUI(e.getMessage(), false);
-//			}
-//			return null;
-//		}
-//	}
-//
-//    @Override
-//    protected void onDestroy() {
-//        if (client != null) {
-//            try {
-//                client.disconnect().await();
-//            } catch (InterruptedException e) {
-//                // Do nothing as this is happening during destroy
-//            } catch (BandException e) {
-//                // Do nothing as this is happening during destroy
-//            }
-//        }
-//        super.onDestroy();
-//    }
-//
-//	private void appendToUI(final String string, boolean isGyroscope) {
-//		if (!isGyroscope) {
-//			this.runOnUiThread(new Runnable() {
-//				@Override
-//				public void run() {
-//					txtStatus.setText(string);
-//				}
-//			});
-//		} else {
-//			this.runOnUiThread(new Runnable() {
-//				@Override
-//				public void run() {
-//					gyroscopeStatus.setText(string);
-//				}
-//			});
-//		}
-//	}
-//
-//	private boolean getConnectedBandClient() throws InterruptedException, BandException {
-//		if (client == null) {
-//			BandInfo[] devices = BandClientManager.getInstance().getPairedBands();
-//			if (devices.length == 0) {
-//				appendToUI("Band isn't paired with your phone.\n", false);
-//				return false;
-//			}
-//			client = BandClientManager.getInstance().create(getBaseContext(), devices[0]);
-//		} else if (ConnectionState.CONNECTED == client.getConnectionState()) {
-//			return true;
-//		}
-//		System.out.println("My state: " + client.getConnectionState().toString());
-//		appendToUI("Band is connecting...\n", false);
-//		return ConnectionState.CONNECTED == client.connect().await();
-//	}
+    private class AccelerometerSubscriptionTask extends AsyncTask<Void, Void, Void> {
+		@Override
+		protected Void doInBackground(Void... params) {
+			try {
+				if (getConnectedBandClient()) {
+					appendToUI("Band is connected.\n", false);
+					client.getSensorManager().registerAccelerometerEventListener(mAccelerometerEventListener, SampleRate.MS128);
+				} else {
+					appendToUI("Band isn't connected. Please make sure bluetooth is on and the band is in range.\n", false);
+				}
+			} catch (BandException e) {
+				String exceptionMessage="";
+				switch (e.getErrorType()) {
+				case UNSUPPORTED_SDK_VERSION_ERROR:
+					exceptionMessage = "Microsoft Health BandService doesn't support your SDK Version. Please update to latest SDK.\n";
+					break;
+				case SERVICE_ERROR:
+					exceptionMessage = "Microsoft Health BandService is not available. Please make sure Microsoft Health is installed and that you have the correct permissions.\n";
+					break;
+				default:
+					exceptionMessage = "Unknown error occured: " + e.getMessage() + "\n";
+					break;
+				}
+				appendToUI(exceptionMessage, false);
+
+			} catch (Exception e) {
+				appendToUI(e.getMessage(), false);
+			}
+			return null;
+		}
+	}
+
+	private class GyroscopeSubscriptionTask extends AsyncTask<Void, Void, Void> {
+		@Override
+		protected Void doInBackground(Void... params) {
+			try {
+				if (getConnectedBandClient()) {
+					appendToUI("Band is connected.\n",false);
+					client.getSensorManager().registerGyroscopeEventListener(gyroscopeEventListener, SampleRate.MS128);
+				} else {
+					appendToUI("Band isn't connected. Please make sure bluetooth is on and the band is in range.\n",false);
+				}
+			} catch (BandException e) {
+				String exceptionMessage="";
+				switch (e.getErrorType()) {
+					case UNSUPPORTED_SDK_VERSION_ERROR:
+						exceptionMessage = "Microsoft Health BandService doesn't support your SDK Version. Please update to latest SDK.\n";
+						break;
+					case SERVICE_ERROR:
+						exceptionMessage = "Microsoft Health BandService is not available. Please make sure Microsoft Health is installed and that you have the correct permissions.\n";
+						break;
+					default:
+						exceptionMessage = "Unknown error occured: " + e.getMessage() + "\n";
+						break;
+				}
+				appendToUI(exceptionMessage, false);
+
+			} catch (Exception e) {
+				appendToUI(e.getMessage(), false);
+			}
+			return null;
+		}
+	}
+
+    @Override
+    protected void onDestroy() {
+        if (client != null) {
+            try {
+                client.disconnect().await();
+            } catch (InterruptedException e) {
+                // Do nothing as this is happening during destroy
+            } catch (BandException e) {
+                // Do nothing as this is happening during destroy
+            }
+        }
+        super.onDestroy();
+    }
+
+	private void appendToUI(final String string, boolean isGyroscope) {
+		if (!isGyroscope) {
+			this.runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					txtStatus.setText(string);
+				}
+			});
+		} else {
+			this.runOnUiThread(new Runnable() {
+				@Override
+				public void run() {
+					gyroscopeStatus.setText(string);
+				}
+			});
+		}
+	}
+
+	private boolean getConnectedBandClient() throws InterruptedException, BandException {
+		if (client == null) {
+			BandInfo[] devices = BandClientManager.getInstance().getPairedBands();
+			if (devices.length == 0) {
+				appendToUI("Band isn't paired with your phone.\n", false);
+				return false;
+			}
+			client = BandClientManager.getInstance().create(getBaseContext(), devices[0]);
+		} else if (ConnectionState.CONNECTED == client.getConnectionState()) {
+			return true;
+		}
+		System.out.println("My state: " + client.getConnectionState().toString());
+		appendToUI("Band is connecting...\n", false);
+		return ConnectionState.CONNECTED == client.connect().await();
+	}
 }
 
