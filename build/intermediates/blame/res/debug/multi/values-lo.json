@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/ubani/Google Drive/4605Fistbump/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
+        "outputFile": "/Users/test/Downloads/Microsoft Band SDK and Samples for Android/BandAccelerometerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 291
                 },
                 "from": {
-                    "file": "/Users/ubani/.android/build-cache/dc9d1f9199e23c41bec7fa60c2e18437ea0f6a17/output/res/values-lo/values.xml",
+                    "file": "/Users/test/.android/build-cache/1fb4cf92ef898eabe5a279b95150d19349746d48/output/res/values-lo/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,

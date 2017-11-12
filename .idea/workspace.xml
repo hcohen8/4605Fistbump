@@ -10,7 +10,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0233d7c1-f484-49f1-9e92-6d1224ef10ee" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/DTW.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-11-11-31-610.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-11-11-50-184.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-11-13-31-737.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-11-15-19-146.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-21-53-02-162.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-22-00-56-365.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-22-02-47-902.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-22-18-22-217.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-10-04-22-18-52-319.rawproto" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$6.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$7.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$8.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$6.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$7.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$8.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_0.apk" afterPath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_0.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$6.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$7.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$8.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$5.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$6.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$7.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$8.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$AccelerometerSubscriptionTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity$GyroscopeSubscriptionTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/BandAccelerometerApp-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/BandAccelerometerApp-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BandAccelerometerApp.iml" afterPath="$PROJECT_DIR$/BandAccelerometerApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/buildId.txt" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java" afterPath="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="BandAccelerometerApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,6 +176,7 @@
       <file leaf-file-name="BandAccelerometerAppActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="405">
               <caret line="207" column="5" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
               <folding>
@@ -100,7 +194,37 @@
                 <element signature="e#13025#13026#0" expanded="true" />
                 <element signature="e#13062#13165#0" expanded="true" />
                 <element signature="e#13164#13165#0" expanded="true" />
+=======
+            <state relative-caret-position="255">
+              <caret line="277" column="38" selection-start-line="277" selection-start-column="38" selection-end-line="277" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3293#3951#0" expanded="true" />
+                <element signature="e#3950#3951#0" expanded="true" />
+                <element signature="e#4018#4664#0" expanded="true" />
+                <element signature="e#4663#4664#0" expanded="true" />
+                <element signature="e#6015#7704#0" expanded="true" />
+                <element signature="e#7703#7704#0" expanded="true" />
+                <element signature="e#8416#8968#0" expanded="true" />
+                <element signature="e#8967#8968#0" expanded="true" />
+                <element signature="e#9091#9647#0" expanded="true" />
+                <element signature="e#9646#9647#0" expanded="true" />
+                <element signature="e#13756#13853#0" expanded="true" />
+                <element signature="e#13852#13853#0" expanded="true" />
+                <element signature="e#13889#13992#0" expanded="true" />
+                <element signature="e#13991#13992#0" expanded="true" />
+>>>>>>> Stashed changes
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DTW.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/DTW.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2219">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,8 +232,13 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="300">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+=======
+            <state relative-caret-position="270">
+              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -148,6 +277,19 @@
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
+=======
+      <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> Stashed changes
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
           <provider editor-type-id="android-designer2">
@@ -162,6 +304,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1181,13 +1330,13 @@
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/DTW.java" />
         <option value="$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="23" />
+    <option name="y" value="27" />
     <option name="width" value="1260" />
     <option name="height" value="717" />
   </component>
@@ -1235,10 +1384,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
+=======
+>>>>>>> Stashed changes
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
@@ -1249,8 +1401,47 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BandAccelerometerApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BandAccelerometerApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BandAccelerometerApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BandAccelerometerApp" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accelerometer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+<<<<<<< Updated upstream
+=======
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1640,7 +1831,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
     <frame x="20" y="23" width="1260" height="717" extended-state="0" />
+=======
+    <frame x="0" y="27" width="1260" height="717" extended-state="0" />
+>>>>>>> Stashed changes
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1648,8 +1843,13 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16472545" sideWeight="0.50656813" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16527545" sideWeight="0.49343187" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16306156" sideWeight="0.50985223" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16306156" sideWeight="0.49014777" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1014975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1659,7 +1859,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Android Model" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32922825" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1693,9 +1897,160 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="277" column="38" selection-start-line="277" selection-start-column="38" selection-end-line="277" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3293#3951#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#4018#4664#0" expanded="true" />
+            <element signature="e#4663#4664#0" expanded="true" />
+            <element signature="e#6015#7704#0" expanded="true" />
+            <element signature="e#7703#7704#0" expanded="true" />
+            <element signature="e#8416#8968#0" expanded="true" />
+            <element signature="e#8967#8968#0" expanded="true" />
+            <element signature="e#9091#9647#0" expanded="true" />
+            <element signature="e#9646#9647#0" expanded="true" />
+            <element signature="e#13756#13853#0" expanded="true" />
+            <element signature="e#13852#13853#0" expanded="true" />
+            <element signature="e#13889#13992#0" expanded="true" />
+            <element signature="e#13991#13992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3293#3951#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#4018#4664#0" expanded="true" />
+            <element signature="e#4663#4664#0" expanded="true" />
+            <element signature="e#6015#7704#0" expanded="true" />
+            <element signature="e#7703#7704#0" expanded="true" />
+            <element signature="e#8416#8968#0" expanded="true" />
+            <element signature="e#8967#8968#0" expanded="true" />
+            <element signature="e#9091#9647#0" expanded="true" />
+            <element signature="e#9646#9647#0" expanded="true" />
+            <element signature="e#13756#13853#0" expanded="true" />
+            <element signature="e#13852#13853#0" expanded="true" />
+            <element signature="e#13889#13992#0" expanded="true" />
+            <element signature="e#13991#13992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+<<<<<<< Updated upstream
             <element signature="e#3270#3940#0" expanded="true" />
             <element signature="e#3939#3940#0" expanded="true" />
             <element signature="e#4007#4653#0" expanded="true" />
@@ -1843,6 +2198,23 @@
             <element signature="e#13025#13026#0" expanded="true" />
             <element signature="e#13062#13165#0" expanded="true" />
             <element signature="e#13164#13165#0" expanded="true" />
+=======
+            <element signature="imports" expanded="true" />
+            <element signature="e#3293#3951#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#4018#4664#0" expanded="true" />
+            <element signature="e#4663#4664#0" expanded="true" />
+            <element signature="e#6015#7704#0" expanded="true" />
+            <element signature="e#7703#7704#0" expanded="true" />
+            <element signature="e#8416#8968#0" expanded="true" />
+            <element signature="e#8967#8968#0" expanded="true" />
+            <element signature="e#9091#9647#0" expanded="true" />
+            <element signature="e#9646#9647#0" expanded="true" />
+            <element signature="e#13756#13853#0" expanded="true" />
+            <element signature="e#13852#13853#0" expanded="true" />
+            <element signature="e#13889#13992#0" expanded="true" />
+            <element signature="e#13991#13992#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -1879,6 +2251,7 @@
         <state relative-caret-position="2595">
           <caret line="213" column="51" selection-start-line="213" selection-start-column="51" selection-end-line="213" selection-end-column="51" />
           <folding>
+<<<<<<< Updated upstream
             <element signature="e#3270#3940#0" expanded="true" />
             <element signature="e#3939#3940#0" expanded="true" />
             <element signature="e#4007#4653#0" expanded="true" />
@@ -1893,6 +2266,23 @@
             <element signature="e#13025#13026#0" expanded="true" />
             <element signature="e#13062#13165#0" expanded="true" />
             <element signature="e#13164#13165#0" expanded="true" />
+=======
+            <element signature="imports" expanded="true" />
+            <element signature="e#3293#3951#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#4018#4664#0" expanded="true" />
+            <element signature="e#4663#4664#0" expanded="true" />
+            <element signature="e#6015#7704#0" expanded="true" />
+            <element signature="e#7703#7704#0" expanded="true" />
+            <element signature="e#8416#8968#0" expanded="true" />
+            <element signature="e#8967#8968#0" expanded="true" />
+            <element signature="e#9091#9647#0" expanded="true" />
+            <element signature="e#9646#9647#0" expanded="true" />
+            <element signature="e#13756#13853#0" expanded="true" />
+            <element signature="e#13852#13853#0" expanded="true" />
+            <element signature="e#13889#13992#0" expanded="true" />
+            <element signature="e#13991#13992#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -1921,6 +2311,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+<<<<<<< Updated upstream
             <element signature="e#3270#3940#0" expanded="true" />
             <element signature="e#3939#3940#0" expanded="true" />
             <element signature="e#4007#4653#0" expanded="true" />
@@ -1935,6 +2326,23 @@
             <element signature="e#13025#13026#0" expanded="true" />
             <element signature="e#13062#13165#0" expanded="true" />
             <element signature="e#13164#13165#0" expanded="true" />
+=======
+            <element signature="imports" expanded="true" />
+            <element signature="e#3293#3951#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#4018#4664#0" expanded="true" />
+            <element signature="e#4663#4664#0" expanded="true" />
+            <element signature="e#6015#7704#0" expanded="true" />
+            <element signature="e#7703#7704#0" expanded="true" />
+            <element signature="e#8416#8968#0" expanded="true" />
+            <element signature="e#8967#8968#0" expanded="true" />
+            <element signature="e#9091#9647#0" expanded="true" />
+            <element signature="e#9646#9647#0" expanded="true" />
+            <element signature="e#13756#13853#0" expanded="true" />
+            <element signature="e#13852#13853#0" expanded="true" />
+            <element signature="e#13889#13992#0" expanded="true" />
+            <element signature="e#13991#13992#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -1997,7 +2405,18 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml" />
+=======
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider editor-type-id="android-manifest">
         <state />
@@ -2027,14 +2446,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="300">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+=======
+        <state relative-caret-position="270">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+>>>>>>> Stashed changes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/DTW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2219">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/microsoft/band/sdk/sampleapp/accelerometer/BandAccelerometerAppActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="405">
           <caret line="207" column="5" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
           <folding>
@@ -2052,6 +2485,26 @@
             <element signature="e#13025#13026#0" expanded="true" />
             <element signature="e#13062#13165#0" expanded="true" />
             <element signature="e#13164#13165#0" expanded="true" />
+=======
+        <state relative-caret-position="255">
+          <caret line="277" column="38" selection-start-line="277" selection-start-column="38" selection-end-line="277" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3293#3951#0" expanded="true" />
+            <element signature="e#3950#3951#0" expanded="true" />
+            <element signature="e#4018#4664#0" expanded="true" />
+            <element signature="e#4663#4664#0" expanded="true" />
+            <element signature="e#6015#7704#0" expanded="true" />
+            <element signature="e#7703#7704#0" expanded="true" />
+            <element signature="e#8416#8968#0" expanded="true" />
+            <element signature="e#8967#8968#0" expanded="true" />
+            <element signature="e#9091#9647#0" expanded="true" />
+            <element signature="e#9646#9647#0" expanded="true" />
+            <element signature="e#13756#13853#0" expanded="true" />
+            <element signature="e#13852#13853#0" expanded="true" />
+            <element signature="e#13889#13992#0" expanded="true" />
+            <element signature="e#13991#13992#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>

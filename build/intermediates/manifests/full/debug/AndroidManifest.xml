@@ -11,8 +11,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="com.microsoft.band.service.access.BIND_BAND_SERVICE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <!-- Required permission for App measurement to run. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -32,6 +32,9 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.microsoft.band.sdk.sampleapp.accelerometer.BandAccelerometerAppActivity"
+            android:label="Band Accelerometer Sample" />
+        <activity
+            android:name="com.microsoft.band.sdk.sampleapp.accelerometer.RegisterActvity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -40,6 +43,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.microsoft.band.sdk.sampleapp.accelerometer.ProfileActivity"
+            android:label="Band Accelerometer Sample" />
+        <activity
+            android:name="com.microsoft.band.sdk.sampleapp.accelerometer.ContactInfoActivity"
+            android:label="Band Accelerometer Sample" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"

@@ -7,6 +7,9 @@
 package com.google.android.gms;
 
 public final class R {
+    public static final class id {
+        public static final int email = 0x7f09000c;
+    }
     public static final class integer {
         public static final int google_play_services_version = 0x7f070000;
     }
