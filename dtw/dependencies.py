@@ -1,17 +1,12 @@
 import os
 import platform
 
-# Windows dependencies
-if (platform.system() == 'Windows'):
-	os.system("pip install numpy")
-	os.system("pip install fastdtw")
-	os.system("pip install sklearn")
-	os.system("pip install scipy")
-	os.system("pip install matplotlib")
-	os.system("pip install pandas")
-
 # Linux dependencies
-elif (platform.system() == 'Linux'):
+if (platform.system() == 'Linux'):
+	os.system("sudo apt-get install build-essential python3-dev python3-setuptools python3-numpy python3-scipy libatlas-dev libatlas3gf-base")
+	os.system("sudo apt-get install libfreetype6-dev libpng-dev")
+	os.system("sudo apt-get install pkg-config")
+	os.system("sudo apt-get install python3-pip")
 	os.system("sudo pip3 install numpy")
 	os.system("sudo pip3 install fastdtw")
 	os.system("sudo pip3 install sklearn")
@@ -19,16 +14,7 @@ elif (platform.system() == 'Linux'):
 	os.system("sudo pip3 install matplotlib")
 	os.system("sudo pip3 install pandas")
 
-# Mac dependencies
-elif (platform.system() == 'Darwin'):
-	os.system("sudo pip install numpy")
-	os.system("sudo pip install fastdtw")
-	os.system("sudo pip install sklearn")
-	os.system("sudo pip install scipy")
-	os.system("sudo pip install matplotlib")
-	os.system("sudo pip install pandas")
-
-# Something else is up
+# Other OS we don't support on server
 else:
 	print('Sorry, this operating system is not supported.')
 	exit()
