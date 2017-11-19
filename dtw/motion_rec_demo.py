@@ -117,42 +117,6 @@ def demo_classifiers():
     print("\n")
     print("===============================================================")
 
-    # Let's do an extended prediction to get the distances to 3 nearest neighbors
-    print("\n")
-    clf2 = KnnDtwClassifier(3)
-    clf2.fit(train_data_raw, train_labels)
-
-    for index, t in enumerate(test_data_raw):
-        res = clf2.predict_ext(t)
-        nghs = np.array(train_labels)[res[1]]
-        print("KnnDtwClassifier neighbors for " + str(test_labels[index]) + " = " + str(nghs))
-        print("KnnDtwClassifier distances to " + str(nghs) + " = " + str(res[0]))
-    print("\n")
-    print("===============================================================")
-
-    # Now let's use CommonClassifier with the histogram data for faster prediction
-    print("\n")
-    clf3 = CommonClassifier(default=True)
-    clf3.fit(train_data_hist, train_labels)
-
-    clf3.print_fit_summary()
-    print("\n")
-
-    cc_pred = []
-    cc_actual = []
-    for index, t in enumerate(test_data_hist):
-        print("CommonClassifier prediction for " + str(test_labels[index]) +
-              " = " + str(clf3.predict([t])))
-        cc_pred.append(str(test_labels[index]))
-        cc_actual.append(str(clf3.predict([t])[0]))
-    labels = os.listdir("data")
-    print("\n")
-    print("Confusion matrix for CommonClassifier: \n")
-    print("Labels: %s\n" % (str(labels)))
-    print(confusion_matrix(cc_actual, cc_pred, labels=labels))
-    print("\n")
-    print("===============================================================")
-
 if __name__ == "__main__":
     load_data()
     plot_histograms()
