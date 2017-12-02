@@ -2,6 +2,7 @@ import csv
 import os
 import sys
 import numpy
+import datetime
 from time import strptime
 
 ####################################
@@ -19,10 +20,10 @@ def csvToText(csvfile, t_or_t):
 	csv_file = csvfile.split("/").pop().split("Data").pop()
 	year = 	csv_file[24:28]
 	month = str(strptime(csv_file[4:7],'%b').tm_mon).zfill(2)
-	day = csv_file[8:10]
-	hour = csv_file[11:13]
-	minute = csv_file[14:16]
-	second = csv_file[17:19]
+	day = csv_file[8:10].zfill(2)
+	hour = csv_file[11:13].zfill(2)
+	minute = csv_file[14:16].zfill(2)
+	second = csv_file[17:19].zfill(2)
 
 	# Getting name of directory
 	csv_dir = csvfile.split("/")[2]
@@ -53,20 +54,60 @@ def csvToText(csvfile, t_or_t):
 		i = i+1
 	g.close()
 	
+def stringToText(data_string, t_or_t):
+	# Naming setup
+	now = datetime.datetime.now()
+	year = 	str(now.year)
+	month = str(now.month).zfill(2)
+	day = str(now.day).zfill(2)
+	hour = str(now.hour).zfill(2)
+	minute = str(now.minute).zfill(2)
+	second = str(now.second).zfill(2)
+
+	# Getting name of directory
+	file_path = 'UNKNOWN'
+
+	if (t_or_t.lower() == 'train'):
+		new_file = "./data/" + file_path + "/TRAIN-" + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + "-" + file_path.lower() + ".txt"
+	elif (t_or_t.lower() == 'test'):
+		new_file = "./data/" + file_path + "/TEST-" + year + "-" + month + "-" + day + "-" + hour + "-" + minute + "-" + second + "-" + file_path.lower() + ".txt"
+	else:
+		panic("Parameter passed in not 'test' or 'train'!")
+
+	# Reading accelerometer and gyroscope data from string
+	txt_rows = data_string.split("\\n")
+
+	g = open(new_file, "w+")
+	g.close()
+
+	# Writing into output txt file
+	i = 0
+	while (i < len(txt_rows)):	
+		with open(new_file, 'a') as g:
+			g.write(txt_rows[i] + "\n")
+		i = i+1
+	g.close()
+	
 
 ####################################
 # Main logic of module
 ####################################
 
 # Check arguments
-if (len(sys.argv) != 3):
-	panic("Usage: python ./DataCleanup.py <csvfile-path> [test|train]")
+if (len(sys.argv) != 4):
+	panic("Usage: python ./DataCleanup.py [csv|string] [<csvfile-path>|<string-of-text>] [test|train]")
 
-# Defining our files
-csvfile = sys.argv[1]
-t_or_t = sys.argv[2]
+# Defining
+data = sys.argv[2]
+t_or_t = sys.argv[3]
 
-# x, y, and z arrays for accelerometer data for csv file
-csvToText(csvfile, t_or_t)
+
+if (sys.argv[1] == 'csv'):
+	# x, y, and z arrays for accelerometer data for csv file
+	csvToText(data, t_or_t)	
+elif (sys.argv[1] == 'string'):
+	stringToText(data, t_or_t)
+else:
+	panic("Second parameter passed in was neither 'csv' nor 'string'. Please check your parameters.")
 
 

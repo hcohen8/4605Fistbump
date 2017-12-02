@@ -27,7 +27,7 @@ for folder in sorted(os.listdir(file_path)):
 		#	t_or_t = raw_input("That was not valid. Train or test? ")
 		t_or_t = arr_split[i]
 		print(t_or_t.upper())
-		os.system("python ./DataCleanup.py " + "\"" + file_path_appended + item + "\"" + " " + t_or_t)
+		os.system("python ./DataCleanup.py csv " + "\"" + file_path_appended + item + "\"" + " " + t_or_t)
 		print("====================================================")
 		i += 1
 	 
