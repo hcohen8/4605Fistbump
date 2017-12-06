@@ -14,7 +14,7 @@ for folder in sorted(os.listdir(file_path)):
 		i += 1
 	# Test data
 	while (i < len(os.listdir(file_path_appended))):
-		arr_split[i] = 'test'
+		arr_split[i] = 'train'
 		i += 1
 	
 	# Going through data

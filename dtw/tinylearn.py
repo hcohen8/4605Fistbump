@@ -74,8 +74,8 @@ class FeatureReducer(object):
     def print_weights(self, n_estimators=10):
         clf = ExtraTreesClassifier(n_estimators)
         clf.fit(self.df_features, self.df_targets).transform(self.df_features)
-        [print("Feature \'" + self.df_features.columns.values[i] + " has weight " +
-               clf.feature_importances_[i]) for i in range(len(clf.feature_importances_))]
+        #[print("Feature \'" + self.df_features.columns.values[i] + " has weight " +
+        #       clf.feature_importances_[i]) for i in range(len(clf.feature_importances_))]
 
 
 class CrossValidator(object):
@@ -98,7 +98,7 @@ class CrossValidator(object):
         else:
             print("Cross-validation summary for " + self.estimator.__class__.__name__)
             print("Mean score: %0.2f (+/- %0.2f)" % (self.scores.mean(), self.scores.std() * 2))
-            [print("Score #" + i + ": %0.2f", self.scores[i]) for i in range(len(self.scores))]
+            #[print("Score #" + i + ": %0.2f", self.scores[i]) for i in range(len(self.scores))]
 
 
 class CvEstimatorSelector(object):
@@ -141,8 +141,8 @@ class CvEstimatorSelector(object):
             print("Selected estimator \'" + self.selected_name +
                   "\' with " + str(self.scores[self.selected_name]) + " mean score.")
             print("Other scores ...")
-            [print("Estimator \'" + n + " \' has mean score " +
-                   str(self.scores[n])) for n in self.estimators if (n != self.selected_name)]
+            #[print("Estimator \'" + n + " \' has mean score " +
+            #       str(self.scores[n])) for n in self.estimators if (n != self.selected_name)]
 
 
 class GridSearchEstimatorSelector(object):
@@ -188,8 +188,8 @@ class GridSearchEstimatorSelector(object):
                   "\' with " + str(self.scores[self.selected_name]) + " mean score.")
             print(self.best_estimator)
             print("\nOther scores ...")
-            [print("Estimator \'" + n + "\' has mean score " +
-                   str(self.scores[n])) for n in self.estimators.keys() if (n != self.selected_name)]
+            #[print("Estimator \'" + n + "\' has mean score " +
+            #       str(self.scores[n])) for n in self.estimators.keys() if (n != self.selected_name)]
 
 
 class KnnDtwClassifier(BaseEstimator, ClassifierMixin):

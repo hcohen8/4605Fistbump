@@ -105,17 +105,18 @@ def demo_classifiers():
     dtw_pred = []
     dtw_actual = []
     for index, t in enumerate(test_data_raw):
-        print("KnnDtwClassifier prediction for " +
-              str(test_labels[index]) + " = " + str(clf1.predict(t)))
+        if (str(clf1.predict(t)[0]) == 'Fistbump'):
+		print(str(clf1.predict(t)[0]))
+	else:
+		print('No Result')
         dtw_pred.append(str(test_labels[index]))
         dtw_actual.append(str(clf1.predict(t)[0]))
     labels = os.listdir("data")
-    print("\n")
-    print("Confusion matrix for KnnDtwClassifier: \n")
-    print("Labels: %s\n" % (str(labels)))
-    print(confusion_matrix(dtw_actual, dtw_pred, labels=labels))
-    print("\n")
-    print("===============================================================")
+    #print("Confusion matrix for KnnDtwClassifier: \n")
+    #print("Labels: %s\n" % (str(labels)))
+    #print(confusion_matrix(dtw_actual, dtw_pred, labels=labels))
+    #print("\n")
+    #print("===============================================================")
 
 if __name__ == "__main__":
     load_data()
