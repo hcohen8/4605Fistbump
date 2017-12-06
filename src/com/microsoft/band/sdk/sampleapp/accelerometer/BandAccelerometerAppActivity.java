@@ -142,7 +142,9 @@ public class BandAccelerometerAppActivity extends Activity {
 	private LocationManager locationManager;
 	private LocationListener listener;
 	private static final String MY_PREFS_NAME = "MyPrefsFile";
-	String inputLine;
+
+    private ArrayList<double[]> masterList = new ArrayList<>(2);
+
 
 	private BandAccelerometerEventListener mAccelerometerEventListener = new BandAccelerometerEventListener() {
         @Override
@@ -154,30 +156,84 @@ public class BandAccelerometerAppActivity extends Activity {
                 long tEnd = System.currentTimeMillis();
                 long tDelta = tEnd - tStart;
                 double elapsedSeconds = tDelta / 1000.0;
-				updateGraph1(elapsedSeconds, event.getAccelerationX(), event.getAccelerationY(), event.getAccelerationZ());
+                // no longer need graph. TODO: delete
+				//updateGraph1(elapsedSeconds, event.getAccelerationX(), event.getAccelerationY(), event.getAccelerationZ());
+
+                double[] arrAccel = {event.getAccelerationX(), event.getAccelerationY(), event.getAccelerationZ()};
+                masterList.add(arrAccel);
+                /* creating arraylists of accel info using getAccelX,Y,Z (same with gyro)
+                 running stEnergy on the arraylist against estimated threshhold
+                 ^^ a master list (array list) of {[acelx, acely, acelz], [gyrox, gyroy, gyroz]}
+                 check if master.length > 99
+                 check 0 - 99
+                 check energy of first 100
+                 add to tail, remove from head - for size purposes
+                 energy above threshold, work_magic
+                */
+                if(masterList.size() > 99) {
+                    double sum = 0;
+                    double avg = 0;
+                    for(double[] x : masterList) {
+                        double mag = mag(x);
+                        sum += mag;
+                    }
+                    avg = sum / 100;
+                    if(avg > 133) {
+                        //work_magic
+                    }
+                    masterList.remove(0);
+                    masterList.remove(0);
+                }
 //            	appendToUI(String.format(" X = %.3f \n Y = %.3f\n Z = %.3f", event.getAccelerationX(),
 //            			event.getAccelerationY(), event.getAccelerationZ()), false);
-
             }
         }
     };
 
+    private double mag(double[] arr) {
+        double sum = 0;
+        for(double x : arr) {
+            sum += Math.pow(x, 2);
+        }
+        return Math.sqrt(sum);
+    }
+
     private BandGyroscopeEventListener gyroscopeEventListener = new BandGyroscopeEventListener() {
 		@Override
-		public void onBandGyroscopeChanged(BandGyroscopeEvent bandGyroscopeEvent) {
+		public void onBandGyroscopeChanged(BandGyroscopeEvent event) {
+            if(event != null) {
+                long tEnd = System.currentTimeMillis();
+                long tDelta = tEnd - tStart;
+                double elapsedSeconds = tDelta / 1000.0;
+                // no longer need graph TODO: delete
+                //updateGraph2(elapsedSeconds, event.getAngularVelocityX(), event.getAngularVelocityY(), event.getAngularVelocityZ());
 
-            long tEnd = System.currentTimeMillis();
-            long tDelta = tEnd - tStart;
-            double elapsedSeconds = tDelta / 1000.0;
-			updateGraph2(elapsedSeconds, bandGyroscopeEvent.getAngularVelocityX(), bandGyroscopeEvent.getAngularVelocityY(), bandGyroscopeEvent.getAngularVelocityZ());
+                double[] arrGyro = {event.getAngularVelocityX(), event.getAngularVelocityY(), event.getAngularVelocityZ()};
+                masterList.add(arrGyro);
 //			appendToUI(String.format(" X = %.3f \n Y = %.3f\n Z = %.3f", bandGyroscopeEvent.getAngularVelocityX(),
 //					bandGyroscopeEvent.getAngularVelocityY(), bandGyroscopeEvent.getAngularVelocityZ()), true);
-
+            }
 		}
-
 	};
 
-
+	/*
+	def stEnergy(frame):
+    sum = 0
+    return numpy.sum(frame ** 2) / numpy.float64(len(frame))
+	 */
+	// take in a frame of measured length to look for the power/energy spike
+    // frame is of accelerometer data, arraylists<dataPoint> (constant stream)
+    // time | accelX | accelY ... | gyroX | gyroY ...
+	private double stEnergy(double[] frame) {
+		int sum = 0;
+		for (double x : frame) {
+			sum += Math.pow(x, 2);
+		}
+		return sum / frame.length;
+	}
+	// checking if energy is above threshold and then sending to check if fistbump
+    // if fistbump, flag in database (isFistbump)
+    // look for people nearby with same flag
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -540,7 +596,6 @@ public class BandAccelerometerAppActivity extends Activity {
 		locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 0, listener);
 	}
 
-
 	private void updateGraph1 (final double timestamp, final float x, final float y, final float z)
 	{
 		runOnUiThread(new Runnable() {
@@ -598,8 +653,6 @@ public class BandAccelerometerAppActivity extends Activity {
         }
         count++;
     }
-
-
 
     private class AccelerometerSubscriptionTask extends AsyncTask<Void, Void, Void> {
 		@Override
