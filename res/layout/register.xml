@@ -52,6 +52,12 @@
 
         />
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
     <Button
         android:id="@+id/registerButton"
         android:layout_width="200dp"

@@ -26,6 +26,7 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
+
 import com.microsoft.band.BandClient;
 import com.microsoft.band.BandClientManager;
 import com.microsoft.band.BandException;
@@ -40,6 +41,15 @@ import com.microsoft.band.sensors.BandAccelerometerEventListener;
 import com.microsoft.band.sensors.BandGyroscopeEvent;
 import com.microsoft.band.sensors.BandGyroscopeEventListener;
 import com.microsoft.band.sensors.SampleRate;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
 import java.util.List;
 import java.util.UUID;
 import com.microsoft.band.tiles.BandIcon;
@@ -47,6 +57,8 @@ import com.microsoft.band.tiles.BandTile;
 
 import android.*;
 import android.Manifest;
+import android.app.DownloadManager;
+import android.app.VoiceInteractor;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -60,9 +72,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 
+import android.os.StrictMode;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.app.Activity;
@@ -77,6 +92,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
@@ -123,6 +142,7 @@ public class BandAccelerometerAppActivity extends Activity {
 	private LocationManager locationManager;
 	private LocationListener listener;
 	private static final String MY_PREFS_NAME = "MyPrefsFile";
+	String inputLine;
 
 	private BandAccelerometerEventListener mAccelerometerEventListener = new BandAccelerometerEventListener() {
         @Override
@@ -164,14 +184,82 @@ public class BandAccelerometerAppActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+
+		StrictMode.setThreadPolicy(policy);
+
+
 		myRef = FirebaseDatabase.getInstance().getReference();
 
-		btnNotif = (Button) findViewById(R.id.sendNotif);
-		try {
-			getConnectedBandClient();
-		} catch (Exception e) {
-			System.out.println("Could not get DAT");
-		}
+		final TextView mTextView = (TextView) findViewById(R.id.text);
+		mTextView.setClickable(true);
+		mTextView.setMovementMethod(LinkMovementMethod.getInstance());
+		String text = "<a href='https://8080-dot-3230247-dot-devshell.appspot.com/?authuser=0'> Clickable </a>";
+		mTextView.setText(Html.fromHtml(text));
+		final Button myButton = (Button) findViewById(R.id.myButton);
+
+		myButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				URL url = null;
+				try {
+					url = new URL("https://8080-dot-3230247-dot-devshell.appspot.com/?key=AIzaSyDcMHb1iEge8NdY0wCCh116zUOERBUqPOw");
+//					url = new URL("http://10.0.2.2:8080/");
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+				}
+				HttpURLConnection urlConnection = null;
+				try {
+					System.out.println("CONNECTING");
+					urlConnection = (HttpURLConnection) url.openConnection();
+					System.out.println("RESULTS: " + urlConnection.toString());
+
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				try {
+					InputStreamReader streamReader = new InputStreamReader(urlConnection.getInputStream());
+					BufferedReader reader = new BufferedReader(streamReader);
+					StringBuilder stringBuilder = new StringBuilder();
+//					InputStream in = new BufferedInputStream((InputStream) urlConnection.getInputStream());
+//					byte[] contents = new byte[1024];
+//					int bytesRead = 0;
+//					String strContents = "";
+//					while((bytesRead = in.read(contents)) != -1) {
+//						strContents += new String(contents, 0, bytesRead);
+//					}
+//					System.out.println(strContents);
+
+					while((inputLine = reader.readLine()) != null){
+						stringBuilder.append(inputLine);
+					}
+					//Close our InputStream and Buffered reader
+					reader.close();
+					streamReader.close();
+					//Set our result equal to our stringBuilder
+					String result = stringBuilder.toString();
+					System.out.println(result);
+					mTextView.setText(result.toString());
+				} catch (IOException e) {
+					e.printStackTrace();
+				} finally {
+					urlConnection.disconnect();
+				}
+
+			}
+		});
+
+
+
+
+
+
+
+//		try {
+//			getConnectedBandClient();
+//		} catch (Exception e) {
+//			System.out.println("Could not get DAT");
+//		}
 //		btnNotif.setOnClickListener(new OnClickListener() {
 //			@Override
 //			public void onClick(View v) {

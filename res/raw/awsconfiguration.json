@@ -1,0 +1,10 @@
+{
+    "accessKeyId": "AKIAJG5LAJPQ5U6WIM4A",
+    "accessKeySecret": "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",
+    "regions": ["eu-west-1", "us-east-1", "us-west-1"],
+    "userDataFile": "cloud-config.sh",
+    "instanceTags": { 
+        "temporaryInstance": "yes"
+    },
+    "controlPort": 8889
+}

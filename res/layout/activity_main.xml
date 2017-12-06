@@ -17,10 +17,18 @@
         android:src="@drawable/profile_icon"/>
 
     <Button
-        android:id="@+id/sendNotif"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="Click Me"
+        android:id="@+id/myButton"/>
+
+    <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Send Notification" />
+        android:layout_height="41dp"
+        android:text="None"
+        android:textSize="38dp"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/listLabel"
